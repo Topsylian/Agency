@@ -1,0 +1,409 @@
+@import "/CSS/main.css";
+
+:root {
+  --white: #ffffff;
+  --primary: #18191f;
+  --secondary: #f4511e;
+  --search: #23a6f0;
+  --Inter: "Inter", sans-serif;
+  --DM-sans: "DM Sans", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --drop-down: #f9f9f9;
+  --border: #e6e6e6;
+  --property: #f5f5f5;
+  --property-border: #979797;
+  --room-type: #818181;
+  --pagination-active: #bdbdbd;
+  --form-label: #252b42;
+  --form-placeholder: #737373;
+  --form-support: #00000080;
+  --black: #000000;
+  --review-container: rgba(244, 81, 30, 0.07);
+  --review: #ffffff6f;
+}
+
+.minimum {
+  margin-top: 150px;
+  padding: 0% 8%;
+  background-color: var(--white);
+	margin-bottom: 150px;
+}
+
+.minimum-header {
+  margin-bottom: 50px;
+}
+
+.minimum-header > h1 {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.minimum-header > h1 > span {
+  border-bottom: 3px solid var(--secondary);
+}
+
+.minimum-section {
+  display: flex;
+  gap: 0px;
+}
+
+.minimum-section > section.minimum-image-box {
+	width: 30%;
+}
+
+.minimum-section > section > .minimum-image {
+  padding: 0px;
+  width: 350px;
+	height: 521px;
+}
+
+.minimum-image > img {
+  border-radius: 50px 0;
+  width: 100%;
+	height: 100%;
+}
+
+.minimum-details {
+  display: flex;
+  flex-wrap: wrap;
+	width: 70%;
+}
+
+.minimum-details > article {
+  width: 33.33%;
+  padding-left: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.minimum-details > article > figure > img {
+  width: 100%;
+}
+
+.minimum-details > article > figure {
+  width: 77px;
+  height: 77px;
+  background-color: var(--white);
+  box-shadow: 0px 12px 19px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .85s ease-in-out;
+}
+
+.minimum-details > article > figure:hover {
+  background-color: var(--room-type);
+  transform: translate(0px, 10px);
+}
+
+.minimum-details > article > p {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: capitalize;
+	width: 100%;
+	margin-top: 21px;
+}
+
+.minimum-details > article.pay-little {
+	padding-left: 30px;
+}
+
+.minimum-details > article.peace {
+	padding-left: 30px;
+}
+
+
+.minimum-details > article.pay-little > p {
+	width: 60%;
+}
+
+.minimum-details > article.enjoy-community > p {
+	width: 70%;
+}
+
+.minimum-details > article.landlord > p {
+	width: 100%;
+}
+
+.minimum-details > article.stay-safe > p {
+	width: 60%;
+}
+
+.minimum-details > article.pay-service > p {
+	width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+  .minimum {
+    margin-top: 150px;
+    padding: 0% 5%;
+    background-color: var(--white);
+    margin-bottom: 100px;
+  }
+  
+  .minimum-header {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .minimum-header > h1 {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: var(--primary);
+  }
+  
+  .minimum-header > h1 > span {
+    border-bottom: 3px solid var(--secondary);
+  }
+  
+  .minimum-section {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  
+  .minimum-section > section.minimum-image-box {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  
+  .minimum-section > section > .minimum-image {
+    padding: 0px;
+    width: 100%;
+    height: 521px;
+  }
+  
+  .minimum-image > img {
+    border-radius: 50px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .minimum-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    gap: 25px;
+  }
+  
+  .minimum-details > article {
+    width: 30%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .minimum-details > article > figure {
+    width: 77px;
+    height: 77px;
+    background-color: var(--white);
+    box-shadow: 0px 12px 19px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .85s ease-in-out;
+  }
+
+  .minimum-details > article > figure:hover {
+    background-color: var(--room-type);
+    transform: translate(0px, 10px);
+  }
+  
+  .minimum-details > article > figure > img {
+    width: 100%;
+  }
+  
+  .minimum-details > article > p {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: capitalize;
+    width: 100%;
+    margin-top: 21px;
+  }
+  
+  .minimum-details > article.pay-little {
+    padding-left: 30px;
+  }
+  
+  .minimum-details > article.peace {
+    padding-left: 30px;
+  }
+  
+  
+  .minimum-details > article.pay-little > p {
+    width: 60%;
+  }
+  
+  .minimum-details > article.enjoy-community > p {
+    width: 70%;
+  }
+  
+  .minimum-details > article.landlord > p {
+    width: 80%;
+  }
+  
+  .minimum-details > article.stay-safe > p {
+    width: 60%;
+  }
+  
+  .minimum-details > article.pay-service > p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .minimum {
+    margin-top: 150px;
+    padding: 0% 3%;
+    background-color: var(--white);
+    margin-bottom: 100px;
+  }
+  
+  .minimum-header {
+    padding-top: 0px;
+    margin-bottom: 50px;
+  }
+  
+  .minimum-header > h1 {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  .minimum-header > h1 > span {
+    border-bottom: 3px solid var(--secondary);
+  }
+  
+  .minimum-section {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  
+  .minimum-section > section.minimum-image-box {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  
+  .minimum-section > section > .minimum-image {
+    padding: 0px;
+    width: 387px;
+    height: 521px;
+  }
+  
+  .minimum-image > img {
+    border-radius: 50px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+  }
+  
+  .minimum-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  
+  .minimum-details > article {
+    width: 47%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .minimum-details > article > figure {
+    width: 77px;
+    height: 77px;
+    background-color: var(--white);
+    box-shadow: 0px 12px 19px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .85s ease-in-out;
+  }
+
+  .minimum-details > article > figure:hover {
+    background-color: var(--room-type);
+    transform: translate(0px, 10px);
+  }
+  
+  .minimum-details > article > figure > img {
+    width: 100%;
+  }
+  
+  .minimum-details > article > p {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: capitalize;
+    width: 100%;
+    margin-top: 21px;
+  }
+  
+  .minimum-details > article.pay-little {
+    padding-left: 0px;
+  }
+  
+  .minimum-details > article.peace {
+    padding-left: 0px;
+  }
+  
+  
+  .minimum-details > article.pay-little > p {
+    width: 100%;
+  }
+  
+  .minimum-details > article.enjoy-community > p {
+    width: 100%;
+  }
+  
+  .minimum-details > article.landlord > p {
+    width: 100%;
+  }
+  
+  .minimum-details > article.stay-safe > p {
+    width: 100%;
+  }
+  
+  .minimum-details > article.pay-service > p {
+    width: 90%;
+  }
+}

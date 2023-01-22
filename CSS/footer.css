@@ -1,0 +1,347 @@
+@import "/CSS/main.css";
+
+:root {
+  --white: #ffffff;
+  --primary: #18191f;
+  --secondary: #f4511e;
+  --search: #23a6f0;
+  --Inter: "Inter", sans-serif;
+  --DM-sans: "DM Sans", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --assistant: "Assistant", sans-serif;
+  --drop-down: #f9f9f9;
+  --border: #e6e6e6;
+  --property: #f5f5f5;
+  --property-border: #979797;
+  --room-type: #818181;
+  --pagination-active: #bdbdbd;
+  --form-label: #252b42;
+  --form-placeholder: #737373;
+  --form-support: #00000080;
+  --black: #000000;
+  --review-container: rgba(244, 81, 30, 0.07);
+  --review: #ffffff6f;
+  --footer-link: #0a142f;
+  --footer-copy: #0a142e;
+}
+
+#footer {
+  background: var(--white);
+	margin-top: 200px;
+}
+
+.footer-line {
+  display: flex;
+	margin-top: 100px;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.footer-border {
+  width: 85%;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.footer-head {
+  display: flex;
+  padding: 0% 10%;
+}
+
+.footer-head > header,
+.footer-head > article {
+  width: 50%;
+}
+
+.footer-head > header {
+  display: flex;
+  align-items: center;
+	padding-left: 100px;
+}
+
+.footer-head > header > h2 {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+
+.footer-head > article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-address > section {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.footer-contact > section {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-address > section > span,
+.footer-contact > section > span {
+  color: var(--secondary);
+}
+
+.footer-address a {
+  color: var(--primary);
+  font-family: var(--assistant);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer-social {
+  display: flex;
+  padding: 3% 10%;
+  justify-content: flex-end;
+}
+
+.footer-social-box {
+  display: flex;
+  gap: 30px;
+  width: 50%;
+}
+
+.footer-social-box > p {
+  font-family: var(--assistant);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--form-label);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+	transition: .5s ease-in-out;
+}
+
+.footer-social-box > figure {
+	transition: .5s ease-in-out;
+}
+
+.footer-social-box > p:hover , .footer-social-box > figure:hover {
+	transform: translate(8px, 0px);
+}
+
+.footer-nav {
+	display: flex;
+	padding: 2% 0%;
+	justify-content: space-between;
+	border-top: 1px solid #7bb9fc;
+	margin: 0 8%;
+}
+
+.footer-nav > nav {
+	display: flex;
+	gap: 20px;
+}
+
+.footer-nav > nav > a {
+  color: var(--footer-link);
+	font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.copyright > p {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: var(--footer-copy);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+	.footer-social {
+		display: flex;
+		padding: 3% 10%;
+		justify-content: center;
+	}
+
+	.footer-social-box {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		width: 100%;
+	}
+
+	.footer-nav {
+		display: flex;
+		padding: 2% 0%;
+		flex-direction: column;
+		justify-content: center;
+		border-top: 1px solid #7bb9fc;
+		margin: 0 8%;
+	}
+
+	.footer-nav > nav {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	
+	.copyright {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.footer-head {
+		display: flex;
+		padding: 0% 5%;
+		flex-direction: column;
+	}
+	
+	.footer-head > header,
+	.footer-head > article {
+		width: 100%;
+	}
+	
+	.footer-head > header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 0px;
+	}
+	
+	.footer-head > header > h2 {
+		font-family: var(--Inter);
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 50px;
+		letter-spacing: -1px;
+		text-transform: capitalize;
+	}
+	
+	.footer-head > article {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	
+	.footer-address > section {
+		display: flex;
+		gap: 20px;
+	}
+	
+	.footer-contact {
+		display: flex;
+		justify-content: space-between;
+		width: 65%;
+	}
+	
+	.footer-contact > section {
+		display: flex;
+		gap: 20px;
+	}
+	
+	.footer-address > section > span,
+	.footer-contact > section > span {
+		color: var(--secondary);
+	}
+	
+	.footer-address a {
+		color: var(--primary);
+		font-family: var(--assistant);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	.footer-social {
+		display: flex;
+		padding: 3% 5%;
+		justify-content: center;
+	}
+	
+	.footer-social-box {
+		display: flex;
+		gap: 5%;
+		width: 100%;
+	}
+	
+	.footer-social-box > p {
+		font-family: var(--assistant);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		color: var(--form-label);
+		mix-blend-mode: normal;
+		opacity: 0.5;
+		transition: .5s ease-in-out;
+	}
+	
+	.footer-social-box > figure {
+		transition: .5s ease-in-out;
+		width: 15px;
+	}
+	
+	.footer-social-box > p:hover , .footer-social-box > figure:hover {
+		transform: translate(8px, 0px);
+	}
+	
+	.footer-nav {
+		display: flex;
+		padding: 2% 0%;
+		justify-content: space-between;
+		border-top: 1px solid #7bb9fc;
+		margin: 0 8%;
+	}
+	
+	.footer-nav > nav {
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.footer-nav > nav > a {
+		color: var(--footer-link);
+		font-family: var(--Inter);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+		text-transform: uppercase;
+	}
+	
+	.copyright > p {
+		font-family: var(--Inter);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+		text-align: right;
+		color: var(--footer-copy);
+		mix-blend-mode: normal;
+		opacity: 0.5;
+	}
+}

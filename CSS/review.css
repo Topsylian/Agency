@@ -1,0 +1,361 @@
+@import "/CSS/main.css";
+
+:root {
+  --white: #ffffff;
+  --primary: #18191f;
+  --secondary: #f4511e;
+  --search: #23a6f0;
+  --Inter: "Inter", sans-serif;
+  --DM-sans: "DM Sans", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --drop-down: #f9f9f9;
+  --border: #e6e6e6;
+  --property: #f5f5f5;
+  --property-border: #979797;
+  --room-type: #818181;
+  --pagination-active: #bdbdbd;
+  --form-label: #252b42;
+  --form-placeholder: #737373;
+  --form-support: #00000080;
+  --black: #000000;
+  --review-container: rgba(244, 81, 30, 0.07);
+  --review: #ffffff6f;
+}
+
+.review {
+  width: 100%;
+  height: 600px;
+  padding: 6% 5%;
+  position: relative;
+  background-color: var(--review);
+  margin-bottom: 110px;
+  cursor: pointer;
+}
+
+.review-bg-container {
+  width: 70px;
+  height: 60px;
+  top: 115px;
+  left: 68px;
+  z-index: -10;
+  position: absolute;
+}
+
+.review-bg-container > img {
+  width: 100%;
+}
+
+.review-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  display: flex;
+  background: var(--review-container);
+  width: 100%;
+  padding: 0% 0% 0% 8%;
+  gap: 38px;
+}
+
+.review-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.review-info > .customer-feedback > p {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  color: var(--primary);
+}
+
+.review-info > .customer-profile > .client-profile > h3 {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--secondary);
+  transition: .7s ease-in-out;
+}
+
+.review-info > .customer-profile > .client-profile > h3:hover {
+  color: var(--room-type);
+  transform: translate(10px, 0px);
+}
+
+.review-info > .customer-profile > .client-profile > p {
+  font-family: var(--Inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--primary);
+  transition: .7s ease-in-out;
+}
+
+.review-info > .customer-profile > .client-profile > p:hover {
+  color: var(--secondary);
+  transform: translate(10px, 0px);
+}
+
+.customer-profile {
+  display: flex;
+  gap: 20px;
+}
+
+.review-cus-links {
+  display: flex;
+  gap: 10px;
+}
+
+.review-cus-links > a {
+  padding: 10px;
+  background:  #D9DBE1;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+}
+
+.review-cus-links > a:hover {
+  background-color: var(--secondary);
+  transform: translate(5px, 0px);
+}
+
+.review-video {
+  width: 50%;
+  background: rgb(0, 0, 0);
+  height: 600px;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: .5;
+    transform: scale(.75);
+  }
+
+  80% {
+    opacity: .5;
+    transform:  scale(.75);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 14.58%,
+    rgba(56, 56, 56, 0.84) 100%
+  );
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay::after {
+	content: url(/Images/Review-images/Vector\ \(9\).png);
+	background-color: var(--secondary);
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .85s ease-in-out;
+  animation: fade-in-out 5s linear 1s infinite normal;
+}
+
+
+.overlay:hover::after {
+	background-color: var(--form-label);
+	opacity: .3;
+}
+
+@media screen and (max-width: 1024px) {
+  .review {
+    width: 100%;
+    height: 500px;
+    padding: 6% 5%;
+    position: relative;
+    background-color: var(--review);
+    margin-bottom: 110px;
+    cursor: pointer;
+  }
+
+
+  .review-container {
+    padding: 0% 0% 0% 5%;
+    gap: 38px;
+  }
+
+  .review-bg-container {
+    top: 85px;
+    left: 28px;
+  }
+
+  .review-video {
+    width: 50%;
+    background: rgb(0, 0, 0);
+    height: 500px;
+    position: relative;
+  }
+
+  video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .overlay {
+    padding: 20px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .review {
+    width: 100%;
+    height: 900px;
+    padding: 6% 5%;
+    position: relative;
+    background-color: var(--review);
+    margin-bottom: 210px;
+    cursor: pointer;
+  }
+
+
+  .review-container {
+    flex-direction: column-reverse;
+    padding: 0% 3% 0% 3%;
+    gap: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    display: flex;
+    background: var(--review-container);
+  }
+
+  .review-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .review-bg-container {
+    top: 85px;
+    left: 28px;
+  }
+
+  .review-video {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 400px;
+    position: relative;
+    margin-bottom: 38px;
+    border-radius: 10px;
+  }
+
+  video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .overlay {
+    padding: 0px;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .review-info > .customer-feedback > p {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--primary);
+  }
+  
+  .review-info > .customer-profile > .client-profile > h3 {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--secondary);
+    transition: .7s ease-in-out;
+  }
+  
+  .review-info > .customer-profile > .client-profile > h3:hover {
+    color: var(--room-type);
+    transform: translate(10px, 0px);
+  }
+  
+  .review-info > .customer-profile > .client-profile > p {
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--primary);
+    transition: .7s ease-in-out;
+  }
+  
+  .review-info > .customer-profile > .client-profile > p:hover {
+    color: var(--secondary);
+    transform: translate(10px, 0px);
+  }
+  
+  .customer-profile {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .review-cus-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .review-cus-links > a {
+    padding: 10px;
+    background:  #D9DBE1;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+  }
+  
+  .review-cus-links > a:hover {
+    background-color: var(--secondary);
+    transform: translate(5px, 0px);
+  }
+}
