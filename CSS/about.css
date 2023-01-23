@@ -208,12 +208,15 @@
   .about-gallery {
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 0px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: yellow;
   }
 
   .about-gallery > figure {
-    width: 40%;
+    width: 48%;
+    margin-bottom: 10px;
   }
   
   .about-gallery > figure > img {
@@ -242,7 +245,7 @@
     font-family: var(--Inter);
     font-style: normal;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 44px;
     color: var(--primary);
     margin-bottom: 15px;
@@ -257,6 +260,7 @@
     line-height: 33px;
     color: var(--primary);
     margin-bottom: 35px;
+    text-align: left;
   }
   
   .about-info > a {

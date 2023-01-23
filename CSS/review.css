@@ -246,7 +246,7 @@ video {
     padding: 6% 5%;
     position: relative;
     background-color: var(--review);
-    margin-bottom: 210px;
+    margin-bottom: 0px;
     cursor: pointer;
   }
 
@@ -269,6 +269,7 @@ video {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    padding-bottom: 50px;
   }
 
   .review-bg-container {
@@ -326,7 +327,7 @@ video {
     font-family: var(--Inter);
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     color: var(--primary);
     transition: .7s ease-in-out;
@@ -348,7 +349,7 @@ video {
   }
   
   .review-cus-links > a {
-    padding: 10px;
+    padding: 8px;
     background:  #D9DBE1;
     border-radius: 50%;
     transition: .5s ease-in-out;
